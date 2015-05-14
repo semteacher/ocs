@@ -17,8 +17,10 @@
 <!DOCTYPE locales SYSTEM "../lib/pkp/dtd/locales.dtd">
 
 <locales>
+	
 	<locale key="ca_ES" complete="false" name="Català"/>
 	<locale key="cs_CZ" complete="true" name="Čeština"/>
+	
 	<locale key="de_DE" complete="false" name="Deutsch"/>
 	<locale key="en_US" name="English"/>	
 	<locale key="es_AR" complete="false" name="Español (Argentina)"/>	
@@ -29,4 +31,5 @@
 	<locale key="pt_BR" name="Português (Brasil)"/>
 	<locale key="pt_PT" complete="false" name="Português (Portugal)"/>
 	<locale key="zh_TW" complete="false" name="正體中文"/>
+    <locale key="uk_UA" complete="false" name="Українська" />
 </locales>
