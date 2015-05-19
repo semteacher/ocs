@@ -287,21 +287,21 @@
 
 	<!-- Submission events -->
 
-	<message key="submission.event.general.abstractSubmitted">Аннотация отправлена</message>
-	<message key="submission.event.general.presentationSubmitted">Презентация отправлена</message>
-	<message key="submission.event.general.paperPublished">Работа опубликована</message>
-	<message key="submission.event.presenter.authorRevision">Авторская, пересмотренная версия отправлена</message>
-	<message key="submission.event.general.authorRevision">Авторский, пересмотренный файл обновлен</message>
-	<message key="submission.event.director.directorAssigned">Директор ассоциирован с отправленными материалами</message>
-	<message key="submission.event.director.directorUnassigned">Директор не ассоциирован с отправленными материалами</message>
-	<message key="submission.event.director.directorDecision">Решение директора отправлено</message>
-	<message key="submission.event.director.directorFile">Директорский файл обновлен</message>
-	<message key="submission.event.director.submissionArchived">Материал отправлен в архив</message>
-	<message key="submission.event.director.submissionRestored">Материал восстановлен из архива</message>
+	<message key="submission.event.general.abstractSubmitted">Аннотацію відправлено</message>
+	<message key="submission.event.general.presentationSubmitted">Презентацію відправлено</message>
+	<message key="submission.event.general.paperPublished">Роботу опубліковано</message>
+	<message key="submission.event.presenter.authorRevision">Авторська, пересмотренная версия отправлена</message>
+	<message key="submission.event.general.authorRevision">Авторський, пересмотренный файл обновлен</message>
+	<message key="submission.event.director.directorAssigned">Директора асоційовано з відправленими матеріалами</message>
+	<message key="submission.event.director.directorUnassigned">Директора не асоційовано з відправленими матеріалами</message>
+	<message key="submission.event.director.directorDecision">Рішення директора відправлено</message>
+	<message key="submission.event.director.directorFile">Директорський файл оновлено</message>
+	<message key="submission.event.director.submissionArchived">Матеріал відправлено в архів</message>
+	<message key="submission.event.director.submissionRestored">Матеріал відновлено з архіву</message>
 
 	<!-- Conference events -->
-	<message key="conference.event.general.configuration">Конфигурация конференции изменена</message>
-	<message key="conference.event.general.deadline">Срок проведения конференции истек</message>
+	<message key="conference.event.general.configuration">Конфігурацію конференції змінено</message>
+	<message key="conference.event.general.deadline">Строк проведення конференції вийшов</message>
 
 	<!--
 	 *
@@ -311,115 +311,113 @@
 	-->
 
 	<!-- Reader paper view -->
-	<message key="reader.fullTextNotAvailable">Работы конференции на данный момент не доступны.</message>
-	<message key="reader.accessDenied">На данный момент Вы не можете просматривать эту работу. Если у Вас есть учетная запись на сайте этой конференции, Вам возможно потребуется войти, чтобы посмотреть содержимое.</message>
-	<message key="reader.fullTextRegistrationRequired">Требуется регистрация для того, чтобы просматривать работы.</message>
-	<message key="reader.fullTextAccountRequired"><![CDATA[Требуется учетная запись, для того чтобы просматривать работы. <a href="{$registerUrl}">Кликните здесь</a>, чтобы создать учетную запись.]]></message>
-	<message key="reader.fullTextRegistrantsOnlyUntil">Свободный доступ для этой конференции будет открыт к {$date}.</message>
-	<message key="reader.fullTextNotPostedYet">Работы для этой конференции будут размещены к {$date}.</message>
+	<message key="reader.fullTextNotAvailable">Роботи конференції на даний момент не доступні.</message>
+	<message key="reader.accessDenied">На данный момент Ви не можете переглядати цю роботу. Якщо у Вас є обліковий запись на сайте цієї конференції, Вам, можливо, знадобиться увійти, щоб переглянути зміст.</message>
+	<message key="reader.fullTextRegistrationRequired">Для того, щоб переглядати роботи необхідна реєстрація.</message>
+	<message key="reader.fullTextAccountRequired"><![CDATA[Необхідний обліковий запис, для того щоб ереглядати роботи. <a href="{$registerUrl}">Натисніть тут</a>, щоб створити обліковий запис.]]></message>
+	<message key="reader.fullTextRegistrantsOnlyUntil">Вільний доступ для цієї конференції буде відкрито до {$date}.</message>
+	<message key="reader.fullTextNotPostedYet">Роботи для цієї конференції будуть розміщені до {$date}.</message>
 
 	<!-- Reader Comments -->
 	<message key="comments.authenticated">{$userName}</message>
-	<message key="comments.commentsOnPaper">Комментарии по работе</message>
-	<message key="comments.commentsClosed">Комментарии закроются к {$closeCommentsDate}.</message>
+	<message key="comments.commentsOnPaper">Коментарі по роботі</message>
+	<message key="comments.commentsClosed">Коментарі закриються до {$closeCommentsDate}.</message>
 
 	<!-- System Information -->
 	<message key="admin.overwriteConfigFileInstructions"><![CDATA[<h4>Примечание!</div><p>Система не могла автоматически перезаписать конфигурационный файл. Чтобы применить Ваши изменения в конфигурации, Вы должны открыть <tt>config.inc.php</tt> файл в текстовом редакторе и заменить его содержимое на содержимое тексового поля ниже.</p>]]></message>
 
-	<!-- Payment Handling -->
-	<message key="payment.type.conferenceRegistration">Регистрация конференции; {$schedConfTitle}; {$registrationTypeName}</message>
+<!-- Payment Handling -->
+<message key = "payment.type.conferenceRegistration">Реєстрація конференції; {$ SchedConfTitle}; {$ RegistrationTypeName}</message>
 
-	<!-- Conference Event Log -->
-	<message key="conference.event.confirmClearLog">Вы уверены, что хотите очистить журнал событий для этой конференции?</message>
-	<message key="conference.event.confirmDeleteLogEntry">Вы уверены, что хотите удалить это событие из журнала?</message>
-	<message key="conference.event.deleteLogEntry">Удалить запись журнала</message>
-	<message key="conference.event.backToEventLog">Вернуться к журналу событий</message>
-	<message key="conference.history.conferenceEventLog">Журнал событий</message>
-	<message key="conference.history.clearLog">Очистить журнал</message>
-	<message key="conference.history.noLogEntries">Нет записей в журнале.</message>
+<!-- Conference Event Log -->
+<message key = "conference.event.confirmClearLog">Ви впевнені, що хочете очистити журнал подій для цієї конференції?</message>
+<message key = "conference.event.confirmDeleteLogEntry">Ви впевнені, що хочете видалити цю подію з журналу?</message>
+<message key = "conference.event.deleteLogEntry">Видалити запис журналу</message>
+<message key = "conference.event.backToEventLog">Повернутися до журналу подій</message>
+<message key = "conference.history.conferenceEventLog">Журнал подій</message>
+<message key = "conference.history.clearLog">Очистити журнал</message>
+<message key = "conference.history.noLogEntries">Немає записів в журналі.</message>
 
-	<!-- General plugin information -->
-	<message key="plugins.categories.generic.description">Общие плагины используются для расширения системы в различных направлениях, которые не поддерживаются другимим категориями плагинов.</message>
-	<message key="plugins.categories.auth.description">Плагины авторизации позволяют системе делегировать пользователю задачи аутентификации с другми системами, такими как LDAP-серверы.</message>
-	<message key="plugins.categories.citationFormats.description">Плагины стиля цитирования обеспечивают пользователей различными форматами, в которых есть доступ к цитатам работ.</message>
+<!-- General plugin information -->
+<message key = "plugins.categories.generic.description">Загальні плагіни використовуються для розширення системи в різних напрямках, які не підтримуються другімім категоріями плагінів.</message>
+<message key = "plugins.categories.auth.description">Модулі авторизації дозволяють системі делегувати користувачеві завдання аутентифікації з другм системами, такими як LDAP-сервери.</message>
+<message key = "plugins.categories.citationFormats.description">Модулі стилю цитування забезпечують користувачів різними форматами, в яких є доступ до цитат робіт.</message>
 
 	<!-- Leftovers -->
-	<message key="manager.setup.finalStepSavedNotes"><![CDATA[<p>Почти готово!</p>
-			<p>Конференция не была установлена, что может повлечь за собой одну запланированную конференцию, квартальную конференцию, или серии запланированных конференций, все из которых могут быть управляемыми с этого сайта. Для того, чтобы планировать специальный экземпляр этой конференции, перейдите по ссылке <a href="{$schedConfSetupUrl}">Запланированные конференции</a>. Вы можете получить доступ к этой страницы в любое время через главную страницу Управляющего конференцией.</p>
-			<p>Вы можете вернуться к этим шести страницам в любое время по следующим ссылкам "Домашнаяя страница пользователя > Руководитель конференции > Установка".</p>
-			<p>Вы можете управлять запланированными конференциями через "Домашнаяя страница пользователя > Руководитель конференции > Установка"</p>]]></message>
+	<message key="manager.setup.finalStepSavedNotes"><![CDATA[<p>Майже готово!</p>
+			<p>Конференція не була встановлена, що може спричинити за собою одну заплановану конференцію, квартальну конференцію, або серії запланованих конференцій, всі з яких можуть бути керованими з цього сайту. Для того, щоб планувати спеціальний примірник цієї конференції, перейдіть за посиланням <a href="{$schedConfSetupUrl}">Заплановані конференції</a>. Ви можете отримати доступ до цієї сторінки в будь-який час через головну сторінку Керуючого конференцією.</p>
+			<p>Ви можете повернутися до цих шести сторінок в будь-який час за наступними лінками "Домашня сторінка користувача > Керівник конференції > Установка".</p>
+			<p>Ви можете управляти запланованими конференціями через "Домашня сторінка користувача > Керівник конференції > Установка"</p>]]></message>
 	<message key="manager.setup.citations">Позволить авторам отдельно отправлять форматированный список литературы (цитаты) как часть их отправляемых материалов.</message>
 
-	<message key="manager.setup.indexing.registerConferenceForIndexing.description"><![CDATA[Чтобы содержимое этой конференции было проиндексировано в глобальных базах цитирования, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">зарегистрируйте</a> Вашу конференцию (URL) с метаданными <a href="http://pkp.sfu.ca/harvester/" target="_blank">здесь</a>. Этот инструментарий собирет метаданные из кажждой Вашей конференции, включая точный и общий поиск среди исследовательских сайтов, которые придерживаются <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Протокола инициативы сбора метаданных Открытых Архивов</a>.
+	<message key="manager.setup.indexing.registerConferenceForIndexing.description"><![CDATA[Щоб вміст цієї конференції було проіндексовано в глобальних базах цитування, <a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">зареєструйте</a> Вашу конференцію (URL) з метаданими <a href="http://pkp.sfu.ca/harvester/" target="_blank">тут</a>. Цей інструментарій позбирає метадані з кожної Вашої конференції, включаючи точний та спільний пошук серед дослідницьких сайтів, які дотримуються <a href="http://www.openarchives.org/OAI/openarchivesprotocol.htm#Introduction" target="_blank">Протоколу ініціативи збору метаданих Відкритих Архівів</a>.
 <br /><br />
-Заметьте, что если Ваш администратор сайта уже зарегистрировал сайт в сборщике метаданных, Ваша конференция будет проиндексирована автоматически и Вам не нужно будет регистрировать Вашу конференцию.
+Зауважте, що якщо Ваш адміністратор сайту вже зареєстрував сайт в збирача метаданих, Ваша конференція буде проіндексована автоматично і Вам не потрібно буде реєструвати Вашу конференцію.
 <br /><br />
-<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Кликните здесь</a> и введите <span class="highlight">{$siteUrl}</span> под <strong>URL сайта</strong>, и <span class="highlight">{$oaiUrl}</span> под <strong>Основной URL для OAI Архива</strong>.]]></message>
+<a href="http://pkp.sfu.ca/harvester/add.php" target="_blank">Натисніть тут</a> і введіть <span class="highlight">{$siteUrl}</span> під <strong>URL сайту</strong>, і <span class="highlight">{$oaiUrl}</span> під <strong>Основний URL для OAI Архіву</strong>.]]></message>
 
 	<!-- Scheduled Conference Setup Step 2 -->
-	<message key="manager.schedConfSetup.submissions.subjectClassificationDescription"><![CDATA[Конференция будет использовать предметную классификацию доступную на веб-сайте.<br />
-Название системы классификации]]></message>
+	<message key="manager.schedConfSetup.submissions.subjectClassificationDescription"><![CDATA[Конференція буде використовувати предметну класифікацію доступну на веб-сайті.<br />
+Назва системи класифікації]]></message>
 
 	<!-- People Management -->
-	<message key="manager.people.confirmDisable">Отключить этого пользователя? Это предотвратит вход этого пользователя в систему.
-
-Опционально вы можете указать причину отключения учетной записи этого пользователя.</message>
-	<message key="manager.people.noAdministrativeRights"><![CDATA[Извините, у Вас нет административных прав. Потому, что:
+	<message key="manager.people.confirmDisable">Відключити цього користувача? Це запобіжить вхід цього користувача в систему. Опціонально ви можете вказати причину відключення облікового запису цього користувача.</message>
+	<message key="manager.people.noAdministrativeRights"><![CDATA[Вибачте, у Вас немає адміністративних прав. Тому що:
 		<ul>
-			<li>Этот пользователь является администратором сайта</li>
-			<li>Пользователь является активным в конференциях, которыми Вы не управляете</li>
+			<li>Цей користувач є адміністратором сайту</li>
+			<li>Користувач є активним у конференціях, якими Ви не керуєте</li>
 		</ul>
-	Эта задача должна быть выполнена администратором сайта.]]></message>
+	Це завдання має бути виконано адміністратором сайту.]]></message>
 
 	<!-- Used by director in submission review / editing -->
-	<message key="director.paper.selectReviewerNotes"><![CDATA[Имя ссылок на профиль рецензента.<br/>
-Рейтинг выше 5 (Отлично).<br/>
-Недель относящихся к среднему периоду времени написания рецензии.<br/>
-Крайняя дата последней принятой рецензии.<br/>
-Активность - это насколько рецензенты в данный момент рецензируют или работают.]]></message>
+	<message key="director.paper.selectReviewerNotes"><![CDATA[Ім'я посилань на профіль рецензента.<br/>
+Рейтинг вище 5 (Відмінно).<br/>
+Тижнів відносяться до середнього періоду часу написання рецензії.<br/>
+Крайня дата останньої прийнятої рецензії.<br/>
+Активність - це наскільки рецензенти в даний момент рецензують або працюють.]]></message>
 	<!-- Track Director -->
-	<message key="trackDirector.author.confirmRenotify">Оповестить этого автора снова о переназначении. Вы уверены, что хотите сделать это?</message>
-	<message key="trackDirector.regrets.breadcrumb">Извинения</message>
-	<message key="trackDirector.regrets.title"><![CDATA[#{$paperId} Извинения рецензента & Отказы]]></message>
-	<message key="trackDirector.regrets">Извинения</message>
-	<message key="trackDirector.regrets.link">Просмотреть извинения, Отказы</message>
-	<message key="trackDirector.regrets.reviewStage">Рецензирование, Этап {$stage}</message>
-	<message key="trackDirector.regrets.decisionStage">Решение директора, Этап {$stage}</message>
-	<message key="trackDirector.regrets.regretsAndCancels"><![CDATA[Извинения рецензента & Отказы]]></message>
-	<message key="trackDirector.regrets.regret">Извинение</message>
+	<message key="trackDirector.author.confirmRenotify">Сповістити цього автора знову про перепризначення. Ви впевнені, що хочете зробити це?</message>
+	<message key="trackDirector.regrets.breadcrumb">Вибачення</message>
+	<message key="trackDirector.regrets.title"><![CDATA[#{$paperId} Вибачення рецензента & Відмови]]></message>
+	<message key="trackDirector.regrets">Вибачення</message>
+	<message key="trackDirector.regrets.link">Переглянути вибачення, Відмови</message>
+	<message key="trackDirector.regrets.reviewStage">Рецензувння, Етап {$stage}</message>
+	<message key="trackDirector.regrets.decisionStage">Рішення директора, Етап {$stage}</message>
+	<message key="trackDirector.regrets.regretsAndCancels"><![CDATA[Вибачення рецензента & Відмови]]></message>
+	<message key="trackDirector.regrets.regret">Вибачення</message>
 	<message key="trackDirector.regrets.result">Результат</message>
-	<message key="trackDirector.review.enrollReviewer">Назначить существующего пользователя как рецензента</message>
-	<message key="trackDirector.review.createReviewer">Создать нового рецензента</message>
+	<message key="trackDirector.review.enrollReviewer">Призначити існуючого користувача як рецензента</message>
+	<message key="trackDirector.review.createReviewer">Створити нового рецензента</message>
 
 	<!-- Reviewer -->
 	<message key="reviewer.completedReviews">Готово</message>
 	<message key="reviewer.averageQuality">Рейтинг</message>
 
 	<!-- Used in submission review -->
-	<message key="reviewer.paper.fileToBeReviewed">Файл будет прорецензирован</message>
-	<message key="reviewer.paper.notifyTheDirector">Уведомить директора</message>
-	<message key="reviewer.paper.canDoReview">Будет прореценизировано</message>
-	<message key="reviewer.paper.cannotDoReview">Невозможно прорецензировать</message>
-	<message key="reviewer.paper.restrictedFileAccess">Отправленные материалы могут быть просмотрены, если рецензирование началось.</message>
-	<message key="reviewer.paper.submissionDirector">Директор по отправляемым материалам</message>
-	<message key="reviewer.paper.reviewerCommentsDescription">Введите или вставьте комментарии по рецензии здесь</message>
-	<message key="reviewer.paper.directorToEnter">Директор для отправки</message>
-	<message key="reviewer.paper.sendReminder">Отправить напоминание</message>
+	<message key="reviewer.paper.fileToBeReviewed">Файл буде прорецензовано</message>
+	<message key="reviewer.paper.notifyTheDirector">Повідомити директора</message>
+	<message key="reviewer.paper.canDoReview">Буде прореценизовано</message>
+	<message key="reviewer.paper.cannotDoReview">Неможливо прорецензувати</message>
+	<message key="reviewer.paper.restrictedFileAccess">Відправлені матеріали можуть бути переглянуті, якщо рецензування почалося.</message>
+	<message key="reviewer.paper.submissionDirector">Директор по відправляємих матеріалах</message>
+	<message key="reviewer.paper.reviewerCommentsDescription">Введіть або вставте коментарі по рецензії тут</message>
+	<message key="reviewer.paper.directorToEnter">Директор для відправки</message>
+	<message key="reviewer.paper.sendReminder">Відправити нагадування</message>
 	<message key="reviewer.paper.automatic">(Авто)</message>
-	<message key="reviewer.paper.selectRecommendation">Выберите рекомендацию и отправьте рцензию, чтобы завершить процесс. Вы должны ввести рецензию или загрузить файл перед выбором рекомендации.</message>
-	<message key="reviewer.paper.recommendation">Рекомендация</message>
-	<message key="reviewer.paper.submitReview">Отправить рецензию директору</message>
-	<message key="reviewer.paper.reviewerComments">Комментарии</message>
-	<message key="reviewer.paper.uploadedFile">Загруженные файлы</message>
-	<message key="reviewer.paper.reviewersAnnotatedVersion">Версия, загруженная рецензентом</message>
-	<message key="reviewer.paper.reviewersAnnotatedVersionDescription">(Если Вы хотите прокомментировать файл для директора, сохраните на вашем жеском диске и используйте Просмотреть/Загрузить.)</message>
-	<message key="reviewer.paper.schedule.request">Директорский запрос</message>
-	<message key="reviewer.paper.schedule.response">Ваш ответ</message>
-	<message key="reviewer.paper.schedule.submitted">Рецензировать отправленное</message>
-	<message key="reviewer.paper.schedule.due">Длительность рецензирования</message>
-	<message key="reviewer.paper.decision.accept">Принять материал</message>
+	<message key="reviewer.paper.selectRecommendation">Виберіть рекомендацію і відправте рцензію, щоб завершити процес. Ви повинні ввести рецензію або завантажити файл перед вибором рекомендації.</message>
+	<message key="reviewer.paper.recommendation">Рекомендація</message>
+	<message key="reviewer.paper.submitReview">Відправити рецензію директору</message>
+	<message key="reviewer.paper.reviewerComments">Коментарі</message>
+	<message key="reviewer.paper.uploadedFile">Завантажені файли</message>
+	<message key="reviewer.paper.reviewersAnnotatedVersion">Версія, завантажена рецензентом</message>
+	<message key="reviewer.paper.reviewersAnnotatedVersionDescription">(Якщо Ви хочете прокоментувати файл для директора, збережіть на вашому жеском диску і використовуйте Переглянути / Завантажити.)</message>
+	<message key="reviewer.paper.schedule.request">Директорський запит</message>
+	<message key="reviewer.paper.schedule.response">Ваша відповідь</message>
+	<message key="reviewer.paper.schedule.submitted">Рецензувати відправлене</message>
+	<message key="reviewer.paper.schedule.due">Тривалість рецензвання</message>
+	<message key="reviewer.paper.decision.accept">Прийняти матеріал</message>
 	<message key="reviewer.paper.decision.pendingRevisions">Требуются изменения</message>
-	<message key="reviewer.paper.decision.resubmitElsewhere">Отправить в другое место</message>
+	<message key="reviewer.paper.decision.resubmitElsewhere">Відправити в другое место</message>
 	<message key="reviewer.paper.decision.decline">Отклонить материал</message>
 	<message key="reviewer.paper.decision.seeComments">Посмотреть комментарии</message>
 	<message key="reviewer.paper.schedule">Планировать</message>
