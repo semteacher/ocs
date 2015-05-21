@@ -37,6 +37,7 @@
 	<!-- Conference Management -->
 	<message key="manager.reviewForms">Форми попереднього перегляду</message>
 	<message key="manager.reviewForms.list.description">Форми для рецензентів, створені тут будуть представлені рецензентам, для заповнення, замість форми за замовчуванням, яка складається з двох текстових полів, перше "для автора і редактора," і друге "для редактора." Форми рецензування можуть бути призначені спеціальному розділу конференції та редакторам буде доступна опція вибору, яку саме форму використовувати для рецензування. У всіх випадках, редактори матимуть опцію включає рецензії в листування з автором.</message>
+
 	<message key="manager.reviewForms.noneChosen">Ніщо / Вільний перегляд форми</message>
 	<message key="manager.reviewForms.noneCreated">Ніяких форм не було створено.</message>
 	<message key="manager.reviewForms.create">Створити форму перегляду</message>
@@ -416,40 +417,40 @@
 	<message key="reviewer.paper.schedule.submitted">Рецензувати відправлене</message>
 	<message key="reviewer.paper.schedule.due">Тривалість рецензвання</message>
 	<message key="reviewer.paper.decision.accept">Прийняти матеріал</message>
-	<message key="reviewer.paper.decision.pendingRevisions">Требуются изменения</message>
-	<message key="reviewer.paper.decision.resubmitElsewhere">Відправити в другое место</message>
-	<message key="reviewer.paper.decision.decline">Отклонить материал</message>
-	<message key="reviewer.paper.decision.seeComments">Посмотреть комментарии</message>
-	<message key="reviewer.paper.schedule">Планировать</message>
-	<message key="reviewer.paper.submissionToBeReviewed">Отправляемые материалы будут прорецензированы</message>
-	<message key="reviewer.paper.reviewSchedule">Планирование рецензирования</message>
-	<message key="reviewer.paper.reviewSteps">Этапы рецензирования</message>
-	<message key="reviewer.paper.reviewerGuidelines">Руководство для рецензентов</message>
-	<message key="reviewer.paper.notifyEditorA">Уведомить директора отправляемых материалов</message>
-	<message key="reviewer.paper.notifyEditorB">относительно того, будет ли проводиться рецензирование.</message>
-	<message key="reviewer.paper.consultGuidelines">Если Вы планируете прорецензировать, консультируйтесь с руководством для рецензентов ниже.</message>
-	<message key="reviewer.paper.downloadSubmissionAbstractOnly">Рецензировать аннотацию, связанную с отправляемыми материалами.</message>
-	<message key="reviewer.paper.downloadSubmissionSubmission">Рецензировать отправленные материалы.</message>
-	<message key="reviewer.paper.enterReviewA">Кликните на иконке, чтобы ввести (или вставьте) Вашу рецензию этого отправляемого материала.</message>
-	<message key="reviewer.paper.uploadFile">Дополнительно, Вы можете загрузить файлы для директора и/или автора для консультации.</message>
-	<message key="reviewer.paper.selectRecommendation">Выберите рекомендацию и отправьте рцензию, чтобы завершить процесс. Вы должны ввести рецензию или загрузить файл перед выбором рекомендации.</message>
-	<message key="reviewer.paper.mustSelectDecision">Не было выбрано рекомендации. Вы должны выбрать рекомендацию для отправки.</message>
-	<message key="reviewer.paper.confirmDecision">После того, как решение записано, Вы больше не сможете вносить изменения в эту версию рецензии. Вы уверены, что хотите продолжить?</message>
-	<message key="reviewer.paper.ensuringBlindReview">Обеспечение слепого рецензирование</message>
+	<message key="reviewer.paper.decision.pendingRevisions">Необхідні зміни</message>
+	<message key="reviewer.paper.decision.resubmitElsewhere">Відправити в інше місце</message>
+	<message key="reviewer.paper.decision.decline">Відхилити матеріал</message>
+	<message key="reviewer.paper.decision.seeComments">Переглянути коментарі</message>
+	<message key="reviewer.paper.schedule">Планувати</message>
+	<message key="reviewer.paper.submissionToBeReviewed">Відправлені матеріали будуть прорецензовані</message>
+	<message key="reviewer.paper.reviewSchedule">Планування рецензування</message>
+	<message key="reviewer.paper.reviewSteps">Етапи рецензування</message>
+	<message key="reviewer.paper.reviewerGuidelines">Керівництво для рецензентів</message>
+	<message key="reviewer.paper.notifyEditorA">Повідомити директора відправлюваних матеріалів</message>
+	<message key="reviewer.paper.notifyEditorB">стосовно того, чи буде проводитися рецензування.</message>
+	<message key="reviewer.paper.consultGuidelines">Якщо Ви плануєте прорецензувати, консультуйтеся з керівництвом для рецензентів нижче.</message>
+	<message key="reviewer.paper.downloadSubmissionAbstractOnly">Рецензувати анотацію, пов'язану з відправляються матеріалами.</message>
+	<message key="reviewer.paper.downloadSubmissionSubmission">Рецензувати відправлені матеріали.</message>
+	<message key="reviewer.paper.enterReviewA">Натисніть на іконці, щоб ввести (або вставте) Вашу рецензію цього відправлюваного матеріалу.</message>
+	<message key="reviewer.paper.uploadFile">Додатково, Ви можете завантажити файли для директора та/або учасника для консультації.</message>
+	<message key="reviewer.paper.selectRecommendation">Виберіть рекомендацію і відправте рцензію, щоб завершити процес. Ви повинні ввести рецензію або завантажити файл перед вибором рекомендації.</message>
+	<message key="reviewer.paper.mustSelectDecision">Не було вибрано рекомендації. Ви повинні вибрати рекомендацію для відправки.</message>
+	<message key="reviewer.paper.confirmDecision">Після того, як рішення записано, Ви більше не зможете вносити зміни в цю версію рецензії. Ви впевнені, що хочете продовжити?</message>
+	<message key="reviewer.paper.ensuringBlindReview">Забезпечення сліпого рецензування</message>
 
 	<!-- Paper Submission Step 3 -->
-	<message key="author.submit.uploadInstructions"><![CDATA[<p>Чтобы загрузить работу на эту конференцию, завершите следующие шаги.</p>
+	<message key="author.submit.uploadInstructions"><![CDATA[<p>Щоб завантажити роботу на цю конференцію, завершіть наступні кроки.</p>
 
 <ol>
-<li>На этой странице, кликните Просмотреть (или Выберите файл), откроется диалогове окно для обнаружения файла на жестком диске Вашего компьютера.</li>
-<li>Найдите файл, который Вы желаете отправить и выделите его.</li>
-<li>Кликните по кнопке открыть в диалоговом окне выбора файла, которая размещает имя файла на этой странице.</li>
-<li>Кликните загрузить най этой странице, загрузится файл из компьютера на сайт конференции и переименует это соответствует соглашениям конференции.</li>
-<li>После того как отправляемые материалы загружены, кликните Сохранить и Продолжить внизу этой странице.</li>
+<li>На цій сторінці, клікніть Переглянути (або Виберіть файл), відкриється діалогове вікно для виявлення файлу на жорсткому диску Вашого комп'ютера.</li>
+<li>Знайдіть файл, який Ви бажаєте відправити і виділіть його.</li>
+<li>Клацніть по кнопці відкрити в діалоговому вікні вибору файлу, яке вміщує ім'я файлу на цій сторінці.</li>
+<li>Клікніть завантажити най цій сторінці, файл буде завантажено з комп'ютера на сайт конференції та перейменовано відповідно вимогам конференції.</li>
+<li>Після того як відправлювані матеріали завантажено, клікніть Зберегти та Продовжити внизу цієї сторінки.</li>
 </ol>]]></message>
 
 	<!-- Paper Submission: upload file -->
-	<message key="submission.submissionFiles">Отправленные файлы</message>
+	<message key="submission.submissionFiles">Відправлені файли</message>
 
 	<!-- Submission Comments -->
 	<message key="submission.comments.directorAuthorCorrespondence">Переписка с Директором/Автором</message>
