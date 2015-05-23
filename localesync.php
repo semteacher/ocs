@@ -2,7 +2,7 @@
 
 <style>
 a {color:blue;font-size:12pt;}
-body {background:White;}
+body {background:aquamarine;}
 </style>
 
 <html>
@@ -12,13 +12,13 @@ body {background:White;}
 </head>
 <body>
 <h2>OJS-OCS XML Locale Data Values Sync</h2>
-<form action="localesync.php" method="post" enctype="multipart/form-data">
+<form action="localesync2.php" method="post" enctype="multipart/form-data">
     <div>
-    Select source file to sync:
+    Select file with locale source text to sync (typically - UA locale from the old version):
     <input type="file" name="sourcefile" id="sourcefile">
     </div>
     <div>
-    Select destination file to sync:
+    Select file with new locale layout to sync (typically - US locale from the new version):
     <input type="file" name="destfile" id="destfile">
     </div>
     <input type="submit" value="Sync Process..." name="submit">
@@ -27,52 +27,60 @@ body {background:White;}
 </html>
 
 <?php
-echo 'ready';
 
+//check is the form was submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-var_dump($_POST);
-var_dump($_FILES);
+    echo "<hr><p>Processing:<br>";
+    //open source file
+    $domsource = new DOMDocument('1.0');
+    $domsource->load($_FILES['sourcefile']['tmp_name']);
+    //open destination
+    $domdest = new DOMDocument('1.0');
+    $domdest->load($_FILES['destfile']['tmp_name']);
 
-$xmlsource=simplexml_load_file($_FILES['sourcefile']['tmp_name']) or die("Error: Cannot open source object");
-$xmldest=simplexml_load_file($_FILES['destfile']['tmp_name']) or die("Error: Cannot open destination object");
-print_r($xmlsource->message[1]['key']);
-//print_r($xmlsource->message[1]);
-print_r("<br>====================================<br>");
-    foreach ($xmlsource->message as $xmlsourceinfo):
-        $mkey= (string) $xmlsourceinfo['key'];
-        $mtext= (string) $xmlsourceinfo;
-        print_r($mkey);
-        print_r("<br>");
-        print_r($mtext);
-        //var_dump($key);
-        //var_dump($xmlsourceinfo);
-        //echo '<li><div class="key">'$key'</div><div class="text">'$text'</li>n';
-        print_r("<br>:::::::::::::::::::::::::::::::::::::<br>"); 
-        $myDataObjects = $xmldest->xpath('/locale/message[@key="'.$mkey.'"]');
+    //locale - get nodelist by tag name
+    $sourcenodes = $domsource->getElementsByTagName('locale');
+    $destnodes = $domdest->getElementsByTagName('locale');
+    $locname = $sourcenodes->item(0)->getAttribute('name');
+    $full_name = $sourcenodes->item(0)->getAttribute('full_name');
+    echo $locname."<br>";
+    $destnodes->item(0)->setAttribute('name', $locname);
+    $destnodes->item(0)->setAttribute('full_name', $full_name);
+    //messages - get nodelist by tag name
+    $sourcenodes = $domsource->getElementsByTagName('message');
+    $destnodes = $domdest->getElementsByTagName('message');
+    //process nodelist
+    foreach ($sourcenodes as $nodecontent) {
+        if ($nodecontent->hasAttributes()) {
+            $localekeyval = $nodecontent->getAttribute('key');
+            $tmptext = (string) $nodecontent->firstChild->nodeValue;
+            echo "==========================================================<br>";
+            echo "key attribute: `$localekeyval`<br>";
+            echo "node value: attribute `$tmptext`<br>";
+            $currres = "-skipped";
+            //process just nodes with existed 'key' attribute
+            if (!is_null($localekeyval)) {
+                //process all search results in back order
+                $i = $destnodes->length - 1;
+                while ($i > -1) {
+                    $destnodecontent = $destnodes->item($i);
+                    if ($destnodecontent->getAttribute('key') == $localekeyval) {
+                        $nodecontent = $domdest->importNode($nodecontent, true);
+                        //$newelement = $domdest->createTextNode('Some new node!');
+                        //$destnodecontent->parentNode->replaceChild($newelement, $destnodecontent);
+                        $destnodecontent->parentNode->replaceChild($nodecontent, $destnodecontent);
+                        $currres = "-replaced";
+                    }
 
-        if ($myDataObjects!=FALSE) {
-                var_dump($myDataObjects);
-        $mkeydest= (string) $myDataObjects[0]['key'];
-        $mtextdest= (string) $myDataObjects[0];
-        print_r($mkeydest);
-        print_r("<br>");
-        print_r($mtextdest);
-        $repmyDataObject = $myDataObjects[0];
-        //$repmyDataObject{0}=$mtext;
-        $repmyDataObject{0}= $xmlsourceinfo;
-        print_r("<br>");
-        $mtextdest= (string) $myDataObjects[0];
-        print_r($mtextdest);
+                    $i--;
+                }
+                //report
+                echo $currres."<br>";
+            }
         }
-        print_r("<br>-------------------------------<br>");        
-    endforeach;
-print_r("<br>=====================================<br>");    
-var_dump($xmldest);
-  $dom = new DOMDocument('1.0');
-  $dom->preserveWhiteSpace = false;
-  $dom->formatOutput = true;
-  $dom->loadXML($xmldest->asXML());
-  echo $dom->save($_FILES['destfile']['name']);
-//$xmldest->asXML($_FILES['destfile']['name']);
+    }
+    echo "<hr>";
+    //save result
+    echo "Saved nodes: ".$domdest->save($_FILES['destfile']['name']);
 }
 ?>
