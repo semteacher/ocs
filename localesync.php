@@ -12,7 +12,7 @@ body {background:aquamarine;}
 </head>
 <body>
 <h2>OJS-OCS XML Locale Data Values Sync</h2>
-<form action="localesync2.php" method="post" enctype="multipart/form-data">
+<form action="localesync.php" method="post" enctype="multipart/form-data">
     <div>
     Select file with locale source text to sync (typically - UA locale from the old version):
     <input type="file" name="sourcefile" id="sourcefile">
@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "==========================================================<br>";
             echo "key attribute: `$localekeyval`<br>";
             echo "node value: attribute `$tmptext`<br>";
-            $currres = "-skipped";
+            $currres = "<strong>-skipped</strong>";
             //process just nodes with existed 'key' attribute
             if (!is_null($localekeyval)) {
                 //process all search results in back order
