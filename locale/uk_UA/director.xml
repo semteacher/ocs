@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
-
 <!--
   * ocs2-devel/locale/en_US/director.xml
   *
@@ -9,9 +8,9 @@
   *
   * Localization strings for the en_US (English) locale.
   *
+  * $Id$
   -->
-
-<locale name="ek_UA" full_name = "Ukraine">
+<locale name="uk_UA" full_name="Ukraine">
 	<message key="director.home">Домівка голови секції</message>
 	<message key="director.submissionQueue">Черга поданих документів</message>
 	<message key="director.submissionArchive">Архів поданих документів</message>
