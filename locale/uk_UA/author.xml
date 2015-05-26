@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE locale SYSTEM "../../lib/pkp/dtd/locale.dtd">
-
 <!--
   * ocs2-devel/locale/en_US/author.xml
   *
@@ -10,8 +9,7 @@
   * Localization strings for the en_US (English) locale.
   *
   -->
-
-<locale name="uk_UA" full_name = "Ukraine">
+<locale name="uk_UA" full_name="Ukraine">
 	<message key="author.submit">Нові Заяви</message>
 	<message key="author.track">Активні Заяви</message>
 	<message key="author.submit.startHere">Почніть звідси, щоб подати документи на цю конференцію.</message>
@@ -51,8 +49,6 @@
 	<message key="author.submit.conferenceTrack">Дані відсліджування Конференції</message>
 	<message key="author.submit.conferenceTrackDescription"><![CDATA[Вберіть потроібний трек для цієї заяви (див. <a href="{$aboutUrl}" target="_new">Політика відслідковування</a>).]]></message>
 	<message key="author.submit.selectTrack">Будь ласка, виберіть трек...</message>
-	<message key="author.submit.submissionLocale">Мова подання</message>
-	<message key="author.submit.submissionLocaleDescription">Ця конференція дозволяє подання кількома мовами. Виберіть основну мову у переліку нижче.</message>
 	<message key="author.submit.submissionChecklist">Контрольний список заяв</message>
 	<message key="author.submit.submissionChecklistDescription">Визначте чи ця заява готова для розгляду в цій конференції, перевіривши наступне (коментарі до директора можуть бути додані нижче).</message>
 	<message key="author.submit.verifyChecklist">Перш ніж продовжити ви повинні переконатися, що всі елементи в поданому переліку задоволені.</message>
@@ -125,6 +121,6 @@
 	<message key="author.submit.finishSubmission">Завершити заяву</message>
 	<message key="author.submit.submissionComplete">Подання завершено. Спасибі за відправлення ваших робіт на{$conferenceTitle}.</message>
 	<message key="author.submit.expedite"><![CDATA[Якщо ця заява у форматі, який готовий до публікації, без подальшого розгляду і редагування роботи, то вона може бути спрямована безпосередньо на виконавчу сторінку через кнопку<a href="{$expediteUrl}" class="action">Натисніть тут</a>.(Примітка: Тільки директори конференцій мають цю опцію для своїх заяв.]]></message>
-	<message key="author.paper.uploadAuthorVersion">UЗавантажена версія автора</message>
+	<message key="author.paper.uploadAuthorVersion">Завантажена версія автора</message>
 	<message key="presenter.submit.authorSubmitLoginMessage">Обліковий запис користувача потребується для подання матеріалів на цю конференцію. Це дозволяє нашим директорам відслідковувати ваші заяви і зв'язуватись з Вами, коли змінюється статус вашої заяви або, якщо потрібна додаткова інформація від Вас.</message>
 </locale>
