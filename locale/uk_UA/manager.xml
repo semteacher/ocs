@@ -392,7 +392,7 @@
 	<message key="manager.schedConfSetup.submissions.typeProvideExamples">Пріведте релевантні приклади дослідницьких типів, методів, і підходів для цього поля</message>
 	<message key="manager.schedConfSetup.submissions.typeOfSubmission">Типи відправляються матеріалів</message>
 	<message key="manager.schedConfSetup.submissions.typeOfSubmission.create">Створити тип відправляються матеріалів</message>
-	<message key="manager.schedConfSetup.submissions.typeOfSubmission.nameMissing">Кожна назва типу матеріалу має бути включено принаймні в основну локаль конференції ({$ primaryLocale}).</message>
+	<message key="manager.schedConfSetup.submissions.typeOfSubmission.nameMissing">Кожна назва типу матеріалу має бути включено принаймні в основну локаль конференції ({$primaryLocale}).</message>
 	<message key="manager.schedConfSetup.submissions.typeOfSubmission.abstractLengthInvalid">Довжина анотації, якщо вказана, повинна бути позитивним числом (максимальна кількість слів).</message>
 	<message key="manager.schedConfSetup.submissions.typeOfSubmission.length">Час (у хвилинах)</message>
 	<message key="manager.schedConfSetup.submissions.typeOfSubmission.abstractLength">Ліміт слів анотації</message>
@@ -405,7 +405,7 @@
 	<message key="manager.schedConfs.form.pathRequired">Потрібно шлях.</message>
 	<message key="manager.schedConfs.form.title">Назва запланованої конференції</message>
 	<message key="manager.schedConfs.form.titleRequired">Потрібно назву.</message>
-	<message key="manager.schedConfs.form.urlWillBe">Це має бути коротке слово або скорочення ідентифікує подія. Посилання URL буде {$ sampleUrl}</message>
+	<message key="manager.schedConfs.form.urlWillBe">Це має бути коротке слово або скорочення ідентифікує подія. Посилання URL буде {$sampleUrl}</message>
 	<message key="manager.schedConfs.noneCreated">Не було створено подій.</message>
 	<message key="manager.schedConfs.scheduledConference">Запланована конференція</message>
 	<message key="manager.schedConfs.schedulingAConference">Планування конференції</message>

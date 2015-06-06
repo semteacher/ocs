@@ -713,7 +713,7 @@
 <p>Якщо у Вас запущений <a href="http://www.php.net/features.safe-mode" target="_blank">PHP Safe Mode</a>, будь ласка переконайтеся, що max_execution_time директива в php.ini файлі конфігурації встановлено у максимальне значення. Якщо цей або інший тайм-ліміт (наприклад, Apache's "Таймаут" директива) досягнута і процес оновлення перерваний, потрібно ручне втручання.</p>]]>
 	</message>	<message key="installer.localeSettingsInstructions"><![CDATA[Для повної підтримки Unicode (UTF-8), виберіть UTF-8 для всіх наборів налаштувань. Зауважте що ця підтримка в даний момент вимагає MySQL>= 4.1.1 або PostgreSQL>= 7.1 сервер баз даних. Будь ласка також зауважте, що повна підтримка Unicode вимагає PHP>= 4.3.0 разом з підтримкою <a href="http://www.php.net/mbstring" target="_blank">mbstring</a> бібліотеки (включена по -умолчанію в останніх настановних пакетах PHP). Ви можете зіткнутися з проблемами використовуючи розширені набори символів якщо Ваш сервер не задовольняє цим вимогам.
 <br /><br />
-Ваш сервер в даний момент підтримує mbstring:<strong>{$ supportsMBString}</strong>]]></message>
+Ваш сервер в даний момент підтримує mbstring: <strong>{$supportsMBString}</strong>]]></message>
 	<message key="installer.localeInstructions">Головні мови для використання в системі. Будь ласка, керуйтеся документацією системи, якщо Ви зацікавилися в підтримці мов не перерахованих тут.</message>
 	<message key="installer.additionalLocalesInstructions">Оберіть будь-який інший додатковий мова для підтримки в цій системі. Ці мови будуть доступні для використання конференціям доступним на цьому сайті. Додаткові мови можуть також бути встановлені в будь-який час з адміністративного інтерфейсу.</message>
 	<message key="installer.filesDirInstructions"><![CDATA[Введіть повне ім'я до існуючої директорів куди завантажуються файли. Ця директорія не повинна бути публічною.<Strong>Будь ласка переконайтеся, що ця директорів існує і є права запису в неї для установника.</Strong>Windows імена шляхів повинні використовувати зворотні Слеш, приклад "C:/myconference/files".]]></message>
@@ -725,8 +725,8 @@
 <p>Установник не зміг автоматично перезаписати конфігураційний файл. Перед тим як використовувати систему, будь ласка відкрийте<tt>config.inc.php</tt>у зручному для Вас текстовому редакторі і замініть його вміст на текст у вікні нижче.</p>]]></message>
 	<message key="installer.installationComplete"><![CDATA[<p>Встановлення системи успішно завершено.</p>
 <p>Щоб почати використовувати систему,<a href="{$createUrl}">увійдіть</a>з ім'ям і паролем ввівши його на попередній сторінці.</p>]]></message>
-	<message key="installer.upgradeComplete"><![CDATA[<p>Оновлення системи до версії {$ version} успішно завершено.</p>
-<p>Не забудьте встановити "installed" настройку у Вашому config.inc.php конфігураційному файлі назад на<em>On</em>.</p><p>,<strong><a href = "" target = "_new "></a>.</strong><a href="" target="_new"></a>.</p>]]></message>
+	<message key="installer.upgradeComplete"><![CDATA[<p>Оновлення системи до версії {$version} успішно завершено.</p>
+<p>Не забудьте встановити "installed" настройку у Вашому config.inc.php конфігураційному файлі назад на<em>On</em>.</p><p>Якщо Ви ще не зареєстровані але бажаєте отримувати оновлення та новини, <strong>будь-ласка зареєструйтеся на <a href="http://pkp.sfu.ca/ocs/register" target="_new">http://pkp.sfu.ca/ocs/register</a>.</strong> Якщо Ви маєте запитання чи коментарі, будь-ласка відвідайте <a href="http://pkp.sfu.ca/support/forum" target="_new">форум підтримки</a>.</p>]]></message>
 
 	<!-- Paper Logs -->
 	<message key="log.default.abstractPeriodExpired">Вікно відправки анотації для незакінченої роботи {$paperId} минув. Документ переміщений в архів.</message>
@@ -741,7 +741,7 @@
 	<message key="log.review.reviewCancelled">Етап {$stage} рецензується {$reviewerName} для матеріалу {$paperId} був скасований.</message>
 	<message key="log.review.reviewCleared">Етап {$stage} рецензується {$reviewerName} для матеріалу {$paperId} був очищений.</message>
 	<message key="log.review.reviewerRated">{$reviewerName} був оцінений за етап {$stage} рецензування матеріалу {$paperId}.</message>
-	<message key="log.review.reviewDueDateSet">Дата проведення етапу {$stage} рецензування матеріалу {$paperId} рецензентом {$reviewerName} була встановлена ​​{$ueDate}.</message>
+	<message key="log.review.reviewDueDateSet">Дата проведення етапу {$stage} рецензування матеріалу {$paperId} рецензентом {$reviewerName} була встановлена ​​{$dueDate}.</message>
 	<message key="log.review.reviewRecommendationSet">Рекомендація для етапу {$stage} рецензування матеріалу {$paperId} рецензентом {$reviewerName} була встановлена.</message>
 	<message key="log.review.reviewRecommendationSetByProxy">Рекомендація для етапу {$stage} рецензування матеріалу {$paperId} була встановлена ​​директором, {$directorName}, від імені рецензента, {$reviewerName}.</message>
 	<message key="log.review.resubmit">Матеріал {$paperId} був заново відправлений на рецензування.</message>
