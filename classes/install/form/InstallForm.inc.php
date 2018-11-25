@@ -80,6 +80,7 @@ class InstallForm extends Form {
 		$this->supportedDatabaseDrivers = array (
 			// <adodb-driver> => array(<php-module>, <name>)
 			'mysql' => array('mysql', 'MySQL'),
+			'mysqli' => array('mysqli', 'MySQLi'),
 			'postgres' => array('pgsql', 'PostgreSQL'),
 			'oracle' => array('oci8', 'Oracle'),
 			'mssql' => array('mssql', 'MS SQL Server'),
@@ -119,7 +120,7 @@ class InstallForm extends Form {
 		$templateMgr->assign('databaseCharsetOptions', $this->supportedDatabaseCharsets);
 		$templateMgr->assign('encryptionOptions', $this->supportedEncryptionAlgorithms);
 		$templateMgr->assign('databaseDriverOptions', $this->checkDBDrivers());
-		$templateMgr->assign('supportsMBString', String::hasMBString() ? __('common.yes') : __('common.no'));
+		$templateMgr->assign('supportsMBString', PKPString::hasMBString() ? __('common.yes') : __('common.no'));
 		$templateMgr->assign('phpIsSupportedVersion', version_compare(PHP_REQUIRED_VERSION, PHP_VERSION) != 1);
 		$templateMgr->assign('phpRequiredVersion', PHP_REQUIRED_VERSION);
 		$templateMgr->assign('phpVersion', PHP_VERSION);
