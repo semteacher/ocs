@@ -221,7 +221,7 @@ class SubmissionEditHandler extends TrackDirectorHandler {
 		$templateMgr->assign_by_ref('submission', $submission);
 		$templateMgr->assign_by_ref('reviewIndexes', $reviewAssignmentDao->getReviewIndexesForStage($paperId, $stage));
 		$templateMgr->assign('stage', $stage);
-		$templateMgr->assign_by_ref('reviewAssignments', $submission->getReviewAssignments($stage));
+		$templateMgr->assign('reviewAssignments', $submission->getReviewAssignments($stage));
 		$templateMgr->assign('reviewFormResponses', $reviewFormResponses);
 		$templateMgr->assign('reviewFormTitles', $reviewFormTitles);
 		$templateMgr->assign_by_ref('notifyReviewerLogs', $notifyReviewerLogs);
@@ -440,7 +440,7 @@ class SubmissionEditHandler extends TrackDirectorHandler {
 				$searchMatch = Request::getUserVar('searchMatch');
 
 			} elseif (!empty($searchInitial)) {
-				$searchInitial = String::strtoupper($searchInitial);
+				$searchInitial = PKPString::strtoupper($searchInitial);
 				$searchType = USER_FIELD_INITIAL;
 				$search = $searchInitial;
 			}
@@ -564,7 +564,7 @@ class SubmissionEditHandler extends TrackDirectorHandler {
 			$searchMatch = Request::getUserVar('searchMatch');
 
 		} elseif (!empty($searchInitial)) {
-			$searchInitial = String::strtoupper($searchInitial);
+			$searchInitial = PKPString::strtoupper($searchInitial);
 			$searchType = USER_FIELD_INITIAL;
 			$search = $searchInitial;
 		}
